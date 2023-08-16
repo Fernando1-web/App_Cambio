@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App_Cambio.MainPage">
+
+    <ScrollView>
+        <StackLayout Margin="20,35,20,20" Spacing="10">
+            <Image Source="cambio.jpg"/>
+            <Label Text="App de cambio" FontSize="22" TextColor="GhostWhite" HorizontalOptions="Center"/>
+            <Entry Placeholder="Ingrese el total del producto" x:Name="EntryTotal"/>
+            <Entry Placeholder="Ingrese el pago del cliente" x:Name="EntryPago"/>
+            <Button Text="Calcular" x:Name="BtnCalcular" Clicked="BtnCalcular_Clicked" HorizontalOptions="End"/>
+            <Label Text="Resultado" x:Name="LblResultado"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
